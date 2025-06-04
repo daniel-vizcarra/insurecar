@@ -1,0 +1,5 @@
+com\insurancecorp\insurecar\run\insurecar.class
+com\insurancecorp\insurecar\model\Coverage.class
+com\insurancecorp\insurecar\model\Customer.class
+com\insurancecorp\insurecar\model\Policy.class
+com\insurancecorp\insurecar\model\Vehicle.class
