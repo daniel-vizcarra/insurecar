@@ -20,4 +20,9 @@
 	</module>		
 	-->
 	
+	<module name="Payment">
+		<model name="Payment"/>
+		<controller name="Typical"/>
+	</module>
+	
 </application>

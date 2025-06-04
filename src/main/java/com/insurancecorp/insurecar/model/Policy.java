@@ -23,11 +23,34 @@ public class Policy {
     private LocalDate startDate;
     private LocalDate endDate;
     private Double premium;
-    private String status;
 
     @ManyToOne
     private Coverage coverage;
 
+    @OneToMany(mappedBy = "policy")
+    private java.util.List<Payment> payments;
+
     private LocalDate createdAt;
     private LocalDate updatedAt;
+
+    @Enumerated(EnumType.STRING)
+    private PolicyStatus status;
+
+    public void updateStatusByPayments() {
+        if (payments == null || payments.isEmpty()) {
+            this.status = PolicyStatus.UNPAID;
+            return;
+        }
+        double totalPaid = payments.stream()
+            .filter(p -> "completed".equalsIgnoreCase(p.getStatus()))
+            .mapToDouble(Payment::getAmount)
+            .sum();
+        if (totalPaid == 0) {
+            this.status = PolicyStatus.UNPAID;
+        } else if (totalPaid < this.premium) {
+            this.status = PolicyStatus.PARTIALLY_PAID;
+        } else {
+            this.status = PolicyStatus.PAID;
+        }
+    }
 }
