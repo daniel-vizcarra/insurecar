@@ -1,5 +1,8 @@
 D:\Development\insurecar\src\main\java\com\insurancecorp\insurecar\model\Coverage.java
 D:\Development\insurecar\src\main\java\com\insurancecorp\insurecar\model\Customer.java
+D:\Development\insurecar\src\main\java\com\insurancecorp\insurecar\model\Payment.java
 D:\Development\insurecar\src\main\java\com\insurancecorp\insurecar\model\Policy.java
+D:\Development\insurecar\src\main\java\com\insurancecorp\insurecar\model\PolicyStatus.java
 D:\Development\insurecar\src\main\java\com\insurancecorp\insurecar\model\Vehicle.java
 D:\Development\insurecar\src\main\java\com\insurancecorp\insurecar\run\insurecar.java
+D:\Development\insurecar\src\main\java\com\insurancecorp\insurecar\service\InsuranceService.java

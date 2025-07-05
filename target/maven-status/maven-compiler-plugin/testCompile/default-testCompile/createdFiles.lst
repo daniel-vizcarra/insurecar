@@ -1,0 +1,4 @@
+com\insurancecorp\insurecar\service\InsuranceServiceTest.class
+com\insurancecorp\insurecar\model\CustomerTest.class
+com\insurancecorp\insurecar\model\PolicyTest.class
+com\insurancecorp\insurecar\model\VehicleTest.class
